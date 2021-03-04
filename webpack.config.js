@@ -10,6 +10,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -53,5 +54,6 @@ module.exports = {
         port: 8000,
         contentBase: path.resolve(__dirname, 'dist'),
         writeToDisk: true,
+        historyApiFallback: true,
     },
 };
