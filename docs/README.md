@@ -7,6 +7,7 @@ This is Webpack + Vue 3 + Typescript setup I did from scratch, following officia
 ```
 npm install vue@next
 npm install -D vue-loader@next @vue/compiler-sfc
+npm install vue-router@next
 ```
 
 ### Note on Typescript
