@@ -39,9 +39,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
-            template: path.resolve(__dirname, 'src', 'index.html'),
-            filename: path.resolve(__dirname, 'dist', 'index.html'),
+            title: 'Vue from scratch',
+            template: path.resolve(__dirname, 'src', 'public', 'index.html'),
+            favicon: path.resolve(__dirname, 'src', 'public', 'favicon.ico'),
         }),
         new VueLoaderPlugin(),
         new DefinePlugin({
@@ -52,7 +52,7 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         port: 8000,
-        contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, 'src', 'public'),
         writeToDisk: true,
         historyApiFallback: true,
     },
