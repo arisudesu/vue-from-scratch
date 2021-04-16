@@ -1,7 +1,9 @@
 <template>Viewing root</template>
 
 <script lang="ts">
-  export default {
+  import { defineComponent } from "vue";
+
+  export default defineComponent({
     name: "Root" as string,
-  };
+  });
 </script>
